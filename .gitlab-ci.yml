@@ -1,0 +1,20 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  tags:
+    - eventsapp
+  script:
+    - npm run build
+
+deploy:
+  stage: deploy
+  tags:
+    - eventsapp
+  script:
+    - git config --global http.extraheader "glpat-y3u9PNixsbk5Kb4Uuc2k"
+    - git clone git@174.129.156.14:muhammadshahab48/liso-arora-project.git
+    - cd liso-arora-project
+    - pm2 serve build --spa

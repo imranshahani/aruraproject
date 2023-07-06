@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+.Productdiv {
+    margin-top: 130px;
+    color: #111111;
+  }
+  .paragraph {
+    padding-left: 70px;
+  }
+  
+  .paragraph h1 {
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+     font-weight: bold; 
+  }
+  
+  .paragraph h3 {
+    font-size: 25px;
+    font-weight: bold; 
+
+  }
+  
+  .Productimage {
+    display: flex;
+    overflow: auto;
+  }
+   
+  .Productimage::-webkit-scrollbar {
+      display: none;
+  }
+  
+  .Productimage{
+      padding: 30px 70px;
+  }
+  
+  .Productimage img {
+    width: 350px;
+    height: 280px;
+    margin: 30px;
+  }
+  
+  .image4 {
+    background: #dcdcdc;
+    border-radius: 20px;
+  }
+  
+  .image6 {
+    background: #dcdcdc;
+    border-radius: 20px;
+    margin-left: 20px;
+  }
+  
+  
+  .previousnext{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 70px;
+  }
+  
+  .previousnext p{
+    cursor: pointer;
+  } 
+  
+  .btn{
+      text-align: center;
+      margin: 100px;
+      color: #111111;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .btn button{
+      width: 200px;
+      height: 35px;
+      color: white;
+      background: #111111;
+  }
+  
+  
+  @media only screen and (max-width: 600px){
+  
+    .Productdiv {
+    padding-left: 0px;
+  
+    }
+    .paragraph {
+    padding-left: 30px;
+  
+    }
+    
+    .paragraph h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .paragraph h3 {
+      font-size: 13px;
+    }
+  
+    .paragraph p{
+      font-size: 12px;
+    }
+    
+    .Productimage {
+      display: flex;
+      overflow-y: auto;
+    }
+     
+    .Productimage img::-webkit-scrollbar {
+      width: 0px;
+    }
+    
+    .Productimage{
+        padding: 10px 30px;
+    }
+    
+    .Productimage img {
+      width: 150px;
+      height: 150px;
+      margin: 0px ;
+    }
+    
+    .image4 {
+      background: #dcdcdc;
+      border-radius: 20px;
+    }
+    
+    .image6 {
+      background: #dcdcdc;
+      border-radius: 20px;
+      margin-left: 20px;
+    }
+    
+    
+    .previousnext{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+    
+    .btn h1{
+      font-size: 25px;
+    }
+    .btn{
+        text-align: center;
+        margin: 100px;
+        color: #111111;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 12px;
+    }
+    
+    .btn button{
+        width: 150px;
+        height: 30px;
+        color: white;
+        background: #111111;
+    }
+    
+  
+  }

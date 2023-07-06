@@ -1,0 +1,233 @@
+.deviceAnimationWrapper {
+    height: 50rem;
+    width: 100%;
+    background-image: linear-gradient(to bottom left, rgb(44, 42, 42) , black 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.deviceAnimationContainer {
+
+    width: 40%;
+    height: 100%;
+}
+
+.firstPic {
+    height: 400px ;
+    position: absolute;
+    left: 40%;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+.secondPic {
+    height: 300px ;
+    position: absolute;
+    top: 20rem;
+    left: 30%;
+    transition-duration: 1s;
+
+}
+.thirdPic {
+    height: 300px ;
+    position: absolute;
+    top: 24rem;
+    left: 47%;
+    transition-duration: 1s;
+
+}
+
+.deviceAnimationContainer:hover .firstPic{
+    /* background-color: red; */
+    transform: translateX(20px) translateY(30px);
+    transition-duration: 1s;
+} 
+.deviceAnimationContainer:hover .secondPic{
+    /* background-color: red; */
+    transform: translateX(40px) translateY(40px);
+    transition-duration: 1s;
+} 
+.deviceAnimationContainer:hover .thirdPic{
+    /* background-color: red; */
+    transform: translateX(-30px) translateY(-30px);
+    transition-duration: 1s;
+} 
+
+
+
+@media only screen and (max-width: 1600px) {
+    .firstPic {
+        left: 40%;
+
+    }
+    .secondPic {
+        top: 20rem;
+        left: 26%;
+    }
+    .thirdPic {
+        top: 25rem;
+        left: 48%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .firstPic {
+        left: 40%;
+
+    }
+    .secondPic {
+        top: 20rem;
+        left: 24%;
+    }
+    .thirdPic {
+        top: 25rem;
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .firstPic {
+        left: 40%;
+
+    }
+    .secondPic {
+        top: 20rem;
+        left: 20%;
+    }
+    .thirdPic {
+        top: 25rem;
+        left: 51%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .firstPic {
+        left: 35%;
+
+    }
+    .secondPic {
+        top: 20rem;
+        left: 11%;
+    }
+    .thirdPic {
+        top: 25rem;
+        left: 50%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .firstPic {
+        left: 34%;
+        height: 320px ;
+    }
+    .secondPic {
+        top: 14rem;
+        left: 6%;
+        height: 250px ;
+    }
+    .thirdPic {
+        top: 20rem;
+        left: 49%;
+        height: 230px ;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .deviceAnimationWrapper  {
+        height: 30rem;
+    }
+    .deviceAnimationContainer:hover .secondPic{
+        transform: translateX(30px) translateY(30px);
+        transition-duration: 1s;
+    } 
+
+    .firstPic {
+        left: 34%;
+        height: 200px ;
+    }
+    .secondPic {
+        top: 10rem;
+        left: 14%;
+        height: 150px ;
+    }
+    .thirdPic {
+        top: 14rem;
+        left: 49%;
+        height: 160px ;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .deviceAnimationWrapper  {
+        height: 30rem;
+    }
+    .deviceAnimationContainer:hover .secondPic{
+        transform: translateX(20px) translateY(20px);
+        transition-duration: 1s;
+    } 
+
+    .firstPic {
+        left: 34%;
+        height: 200px ;
+    }
+    .secondPic {
+        top: 10rem;
+        left: 8%;
+        height: 150px ;
+    }
+    .thirdPic {
+        top: 14rem;
+        left: 51%;
+        height: 160px ;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .deviceAnimationWrapper  {
+        height: 30rem;
+    }
+    .deviceAnimationContainer:hover .thirdPic{
+        transform: translateX(-20px) translateY(-20px);
+        transition-duration: 1s;
+    } 
+
+    .firstPic {
+        left: 30%;
+        height: 180px ;
+    }
+    .secondPic {
+        top: 10rem;
+        left: 2%;
+        height: 140px ;
+    }
+    .thirdPic {
+        top: 14rem;
+        left: 52%;
+        height: 140px ;
+    }
+}
+
+
+/* @media only screen and (max-width: 1600px) {
+    .firstPic {
+        height: 400px ;
+        position: absolute;
+        left: 40%;
+        overflow: hidden;
+        transition-duration: 1s;
+    }
+    .secondPic {
+        height: 300px ;
+        position: absolute;
+        top: 20rem;
+        left: 30%;
+        transition-duration: 1s;
+    
+    }
+    .thirdPic {
+        height: 300px ;
+        position: absolute;
+        top: 24rem;
+        left: 47%;
+        transition-duration: 1s;
+    
+    }
+} */

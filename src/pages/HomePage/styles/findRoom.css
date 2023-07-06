@@ -1,0 +1,83 @@
+.findRoomWrapper {
+    /* height: 60rem; */
+    background-color: aliceblue;
+    position: relative;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+.materialHeading {
+    position: absolute;
+    margin: 120px 150px;
+    width: 40%;
+}
+
+.materialHeading h1 {
+    text-transform: uppercase;
+    color: rgb(86, 255, 86);
+}
+
+.materialHeading p {
+    color: white;
+    font-size: 25px;
+}
+
+.backgroundImgContainer img{
+    /* margin-left: -170px; */
+}
+
+.findRoomVideoContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+.findRoomVideoContainer video {
+    position: absolute;
+    right: 10%;
+    top: 18.4%;
+    width: 37.5%;
+    
+}
+
+
+@media screen and (max-width: 1400px) {
+    .materialHeading {
+        margin: 80px 100px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .materialHeading {
+        margin: 40px 50px;
+    }
+    .materialHeading p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .materialHeading {
+        margin: 20px 30px;
+
+    }
+    .materialHeading p {
+        font-size: 12px;
+    }
+    .materialHeading h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .materialHeading {
+        margin: 20px 20px;
+
+    }
+    .materialHeading p {
+        font-size: 11px;
+    }
+    .materialHeading h1 {
+        font-size: 16px;
+    }
+}

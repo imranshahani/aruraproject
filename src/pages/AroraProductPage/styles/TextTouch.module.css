@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+.touchtext{
+    margin-top: 200px;
+    text-align: center;
+    background:#F2F2F2;
+    padding: 130px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.touchtext h1{
+    font-size: 60px;
+    background: linear-gradient( to right, #febb2e 30%, #ef0143 40%, #061178 70% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    
+}
+
+.touchtext h3{
+    color: #6A6A6A;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.touchtext h3:hover{
+    color: #339ec9;
+    /* color: rgb(55, 83, 221); */
+}
+
+
+@media only screen and (max-width: 600px){
+    
+    .touchtext {
+    margin-top: 120px;
+        text-align: center;
+        background: #f2f2f2;
+        padding: 50px;
+      }
+    
+    .touchtext h1{
+        font-size: 35px;  
+    }
+
+    .touchtext h3{
+        font-size: 23px;
+    }
+
+}

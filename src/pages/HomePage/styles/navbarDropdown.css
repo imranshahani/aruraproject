@@ -1,0 +1,84 @@
+.services-submenu {
+  display: flex;
+  /* justify-content: center; */
+  width: 100%;
+  top: 75px;
+  left: 0px;
+  position: absolute;
+  list-style: none;
+  background-color: white !important;
+  padding: 0%;
+  overflow: scroll;
+  --shadow: #ff0000;
+  --scrollbarBG: white;
+  --thumbBG: #ff0000;
+}
+
+
+.services-submenu::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.services-submenu::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+.services-submenu::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  box-shadow: -100vh 0 100vh 0 var(--shadow), 0 0 15px 5px black;
+}
+
+.services-submenu.clicked {
+  display: none;
+}
+
+/* .services-submenu li {
+    align-items: center;
+
+} */
+
+.submenu-item {
+  /* overflow-x: auto; */
+  /* display: flex; */
+  width: 150px !important;
+  height: 120px !important;
+  /* text-decoration: none; */
+  color: black !important;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+  left: 100px !;
+  /* width: 100%; */
+}
+
+.submenu-item:hover {
+  background-color: black;
+  color: white !important;
+  font-size: 16px !important;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+
+  .services-submenu {
+    top: 120px;
+    left: 0%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .services-submenu {
+    top: 90px;
+    left: 0%;
+  }
+
+}

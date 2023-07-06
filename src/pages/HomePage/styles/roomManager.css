@@ -1,0 +1,69 @@
+
+
+.wrapper {
+  min-height: 60rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #000000, rgb(179, 14, 14));
+  display: flex;
+  justify-content: center;
+  border-radius: .25em;
+  box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+.material {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+.inner-text {
+  font-weight: bold;
+  margin: 5px;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+.bookedButton {
+  font-weight: bold;
+  width: 8rem;
+  padding: 5px;
+  margin: 10px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: beige;
+}.bookedButton:hover {
+  background-color: white;
+  color: #000000;
+}
+
+
+
+.image {
+  /* background-color: aliceblue; */
+  padding: 40px;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .image img{
+    height: 15rem;
+    transition: 1s;
+  }
+  .wrapper {
+    min-height: 50rem;
+  }
+}

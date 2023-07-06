@@ -1,0 +1,180 @@
+.header-wrapper {
+    height: 50rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.header-material {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-text h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.second-text h1 {
+    font-weight: 900;
+    font-size: 150px;
+    text-transform: uppercase;
+    color: gray;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.second-text h1::before {
+    position: absolute;
+    content: attr(data-content);
+    top: 0;
+    left: 0;
+    color: rgb(31, 243, 31);
+    overflow: hidden;
+    animation: fillTextAnimation 3s ease forwards;
+    animation-delay: 1.5s;
+    width: 0;
+    white-space: nowrap;
+}
+
+.second-text span::before {
+    position: absolute;
+    content: attr(data-content-2);
+    top: 0;
+    left: 33.3;
+    color: rgb(255, 0, 0);
+    overflow: hidden;
+    animation: fillTextAnimation 3s ease forwards;
+    animation-delay: 2s;
+    width: 0;
+    white-space: nowrap;
+}
+
+
+@keyframes fillTextAnimation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 950px) {
+
+    .second-text h1 {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .header-wrapper {
+        height: 80vh;
+    }
+
+    .first-text h1 {
+        font-size: 20px;
+    }
+
+    .second-text h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .first-text h1 {
+        font-size: 20px;
+    }
+
+    .second-text h1 {
+        font-size: 60px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 420px) {
+
+
+    .first-text h1 {
+        font-size: 16px;
+    }
+
+    .second-text h1 {
+        font-size: 45px;
+        margin: 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+    display: flex;
+    text-indent: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box {
+    background-size: 0 100%;
+    animation: stripes 2s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.box--red {
+    background: linear-gradient(red, red) white no-repeat 0 0;
+    animation-delay: 1s;
+}
+
+.box--green {
+    background: linear-gradient(green, green) white no-repeat 0 0;
+    animation-delay: 2s;
+}
+
+.box-with-text {
+    text-transform: uppercase;
+    font: bold 100px Open Sans, Impact;
+    background: black;
+    display: flex;
+    color: grey;
+}
+
+.box .box-with-text {
+    mix-blend-mode: multiply;
+}
+
+@keyframes stripes {
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+ */
