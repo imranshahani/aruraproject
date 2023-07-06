@@ -9,7 +9,7 @@ import FooterArea from './pages/HomePage/components/FooterArea';
 
 // import { Switch } from '@mui/material';
 
-
+ 
 
 const App = () => {
 
